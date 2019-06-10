@@ -1,7 +1,7 @@
 # Unfocus-EditText-when-taping-outside-on-UI
 
 In activity : 
-edittext.setOnFocusChangeListener(new View.OnFocusChangeListener() { 
+```edittext.setOnFocusChangeListener(new View.OnFocusChangeListener() { 
             @Override 
             public void onFocusChange(View v, boolean hasFocus) { 
                 if (!hasFocus) { 
@@ -31,9 +31,9 @@ public boolean dispatchTouchEvent(MotionEvent event) {
         } 
         return super.dispatchTouchEvent(event); 
 } 
- 
+ ```
 In xml : 
-<LinearLayout ... 
+```<LinearLayout ... 
 android:focusable="true" 
 android:focusableInTouchMode="true" 
 ...> 
@@ -41,3 +41,4 @@ android:focusableInTouchMode="true"
   <EditText..></EditText> 
    
 </LinearLayout..> 
+```
